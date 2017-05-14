@@ -1,4 +1,4 @@
-__version__ = '0.0.1'
+__version__ = '0.0.2'
 
 from .download import (download_state_election_polls,
                        download_federal_election_polls)

@@ -17,7 +17,10 @@ Or just download everything:
 
 Or use like this as a Python module.:
 
-    from wahlrecht import get_state_polls
+    from wahlrecht import get_state_polls, get_federal_polls
 
     for info in get_state_polls('nrw'):
+        print(info)
+
+    for info in get_federal_polls():
         print(info)
