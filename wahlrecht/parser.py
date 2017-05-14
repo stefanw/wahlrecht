@@ -304,10 +304,11 @@ def parse_poll_table(ident, table):
 
 def get_flat_results(row):
     info = dict(row)
-    if row['date'] is None:
+    if info['date'] is None:
         return
     results = info.pop('results')
     for key, value in results.items():
+        info = dict(info)
         info['party'] = key
         info['percentage'] = value
         yield info
